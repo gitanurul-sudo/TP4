@@ -1,0 +1,256 @@
+body {
+  body {
+  margin: 0;
+  padding: 0;
+  background:#fff;
+  font-family: 'Architects Daughter', cursive;
+}
+
+}
+/* ===== LOGIN  ===== */
+.login-wrapper {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.login-box {
+  border:2px dashed #333;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:4px 4px 6px rgba(0,0,0,0.3);
+  width:360px;
+  background:#edf4f7;
+}
+
+.login-box h2 {
+  text-align:center;
+  margin-bottom:20px;
+  font-size:22px;
+ 
+}
+
+.login-box form {
+  display:flex;
+  flex-direction:column;
+  
+}
+
+.login-box input {
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border:2px solid #ddd;
+  border-top:3px solid #000; 
+  border-radius:10px;
+  font-size:16px;
+  box-sizing:border-box;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.login-box input:focus {
+  border-color:#a09d9d;
+  outline:none;
+  background:#dddfe0;
+}
+
+.btn {
+  display:flex;
+  justify-content:flex-end;  
+  padding-right:20px;  
+}
+
+.login-box button {
+  margin-top:8px;
+  padding:7px 16px;
+  border:2px solid #adafb0;
+  background:#dcdcdc; 
+  border-radius:10px;
+  box-shadow:2px 2px 3px rgba(0,0,0,0.2);
+  font-family: 'Architects Daughter', cursive;
+  font-size:15px;
+  cursor:pointer;
+  color:#000; 
+  transition: all 0.3s ease;
+}
+
+.login-box button:hover { 
+  background:#000; 
+  color:#fff;      
+  transform: scale(1.05); 
+}
+
+.login-box button:active {
+  transform: scale(0.95); 
+}
+/* ===== DASHBOARD ===== */
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 100;
+}
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #000;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;  
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 32px;   
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  font-family: 'Architects Daughter', cursive;
+  box-sizing: border-box;  
+}
+
+.navbar h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px; 
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #ffd700; 
+}
+ 
+
+
+/* ===== HERO / HOME SECTION ===== */
+.home {
+  margin-top: 70px; 
+  position: relative;
+  width: 100%;
+  text-align: center;
+  display: block; 
+  margin-bottom: 30px 
+}
+
+.home img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border: none;          
+  border-radius: 10px;
+  display: block;
+}
+
+.home-text {
+  position: absolute;
+  top : 50%;
+  left: 30%;
+  transform: translateX(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-family: 'Architects Daughter', cursive;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7); 
+  text-align: center;
+ 
+}
+
+/* ===== COLLECTIONS ===== */
+.collections {
+  text-align: left;
+  margin: 40px auto;
+  padding: 20px 40px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.collections h2 {
+  color: #000;
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 200px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
